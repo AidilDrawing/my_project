@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Sketsa Wajah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin: 10px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .testimonial, .contact {
+            background-color: #eee;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .contact form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>CORETAN SENI</h1>
+        <p>Sketsa Wajah Realistis</p>
+    </header>
+
+
+    <!-- Layanan -->
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <p>Saya menyediakan jasa sketsa wajah dengan berbagai pilihan ukuran dan gaya. Setiap sketsa dibuat secara detail dan unik, menjadikan hasil yang personal dan istimewa.</p>
+        <p>Saya menyediakan jasa sketsa wajah hitam putih dengan pensil, dengan berbagai pilihan ukuran dan waktu pengerjaan yang fleksibel.</p>
+        <h3>Harga & Estimasi Waktu Pengerjaan</h3>
+        <table style="margin: 0 auto; width: 80%; border-collapse: collapse;">
+            <tr>
+                <th style="padding: 10px; background-color: #333; color: #fff;">Ukuran</th>
+                <th style="padding: 10px; background-color: #333; color: #fff;">Harga</th>
+                <th style="padding: 10px; background-color: #333; color: #fff;">Waktu Pengerjaan</th>
+                <th style="padding: 10px; background-color: #333; color: #fff;">Detail</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #f1f1f1;">A5 (14.8 x 21 cm)</td>
+                <td style="padding: 10px; background-color: #f1f1f1;">Rp 50.000 - Rp 70.000</td>
+                <td style="padding: 10px; background-color: #f1f1f1;">1-2 hari</td>
+                <td style="padding: 10px; background-color: #f1f1f1;">Satu wajah</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">A4 (21 x 29.7 cm)</td>
+                <td style="padding: 10px;">Rp 100.000 - Rp 150.000</td>
+                <td style="padding: 10px;">2-4 hari</td>
+                <td style="padding: 10px;">Satu atau dua wajah, + background</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; background-color: #f1f1f1;">A3 (29.7 x 42 cm)</td>
+                <td style="padding: 10px; background-color: #f1f1f1;">Rp 200.000 - Rp 300.000</td>
+                <td style="padding: 10px; background-color: #f1f1f1;">4-7 hari</td>
+                <td style="padding: 10px; background-color: #f1f1f1;">Satu hingga tiga wajah, + background</td>
+            </tr>
+        </table>
+        <h4>Tambahan Layanan</h4>
+        <p>Tambah Orang: Rp 50.000 per orang | Background Detail: Rp 30.000 - Rp 70.000 | Layanan Ekspres: Tambah 10-20% dari harga normal.</p>
+    </section>
+
+    <!-- Galeri -->
+    <section id="gallery">
+        <h2>Galeri Karya</h2>
+        <div class="gallery">
+            <img src="draw1.jpg" alt="Sketsa 1">
+            <img src="draw2.webp" alt="Sketsa 2">
+            <img src="draw3.webp" alt="Sketsa 3">
+            <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimonials" class="testimonial">
+        <h2>Testimoni Pelanggan</h2>
+        <p> </p>
+        <p> Belum ada testimoni, baru mulai</p>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <p>Untuk pemesanan atau pertanyaan lebih lanjut, hubungi kami melalui form di bawah ini:</p>
+        <form action="send_message.php" method="POST">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" placeholder="Pesan atau pertanyaan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <p><strong>Lokasi:</strong> Syiah Kuala, Banda Aceh, Indonesia</p>
+        <p><strong>Email:</strong> aidilfurqan7@gmail.com</p>
+        <p><strong>Telepon:</strong> 083841931475</p>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+        <p>&copy; 2024 Jasa Sketsa Wajah Aidil. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
